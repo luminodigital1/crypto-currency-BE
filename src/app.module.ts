@@ -1,10 +1,8 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+
+import { CryptoCurrencyModule } from './CryptoCurrency/crypto-currency.module';
 
 @Module({
-  imports: [],
-  controllers: [AppController],
-  providers: [AppService],
+  imports: [CryptoCurrencyModule],
 })
 export class AppModule {}
