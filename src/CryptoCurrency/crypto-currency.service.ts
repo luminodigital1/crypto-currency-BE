@@ -22,7 +22,7 @@ export class CryptoCurrencyService implements OnModuleInit, OnModuleDestroy {
   }
 
   private connect() {
-    this.socket = new WebSocket('wss://ws.coincap.io/prices?assets=ALL');
+    this.socket = new WebSocket(process.env.COINCAP_URL);
 
     this.socket.on('open', () => {
       console.log('WebSocket connection established.');
