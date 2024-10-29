@@ -19,9 +19,7 @@ This NestJS project connects to an external cryptocurrency WebSocket (`wss://ws.
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Endpoints](#endpoints)
-- [Dependencies](#dependencies)
+- [Deplyment link](#deployment-link)
 
 ---
 
@@ -80,24 +78,6 @@ The server will start on the configured port, and the WebSocket connection to th
 
 ---
 
-## Project Structure
-
-```plaintext
-.
-├── src
-│   ├── constants                # Contains cryptocurrency constants
-│   ├── helper                   # Helper functions, including `initializeCryptoData`
-│   ├── crypto-currency.service  # CryptoCurrencyService that fetches and processes data
-│   ├── crypto-currency.gateway  # WebSocket Gateway for frontend communication
-│   └── crypto-currency.module   # Module to encapsulate service and gateway
-├── .env                         # Environment configuration file
-└── README.md                    # Project documentation
-```
-
----
-
-## Endpoints
-
 ### WebSocket Events
 
 The server emits the following events over WebSocket:
@@ -113,28 +93,7 @@ The server emits the following events over WebSocket:
 
 ---
 
-## Dependencies
+## Deployment Link
 
-- `@nestjs/common`
-- `@nestjs/config`
-- `@nestjs/core`
-- `@nestjs/platform-express`
-- `@nestjs/platform-socket.io`
-- `@nestjs/websockets`
-- `dotenv`
-- `reflect-metadata`
-- `rxjs`
-- `socket.io`
-- `ws`
-
----
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
----
-
-## Contact
-
-For any inquiries or suggestions, please contact [Your Name or Email Here].
+For deployment, follow the following link:
+`https://crypto-currency-be-9464babaec34.herokuapp.com/`
